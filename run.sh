@@ -4,4 +4,3 @@ if [ ! -f /.tomcat_admin_created ]; then
 fi
 
 exec ${CATALINA_HOME}/bin/catalina.sh run
-
