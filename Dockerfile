@@ -21,8 +21,8 @@ RUN apk upgrade --update && \
     apk del curl && \
     rm -rf /tmp/* /var/cache/apk/*
 
-ADD create_tomcat_admin_user.sh /create_tomcat_admin_user.sh
-ADD run.sh /run.sh
+ADD https://raw.githubusercontent.com/jz3p/ecbd-tomcat7/master/create_tomcat_admin_user.sh /create_tomcat_admin_user.sh
+ADD https://raw.githubusercontent.com/jz3p/ecbd-tomcat7/master/run.sh /run.sh
 RUN chmod +x /*.sh
 
 EXPOSE 8080
