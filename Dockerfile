@@ -16,8 +16,8 @@ RUN apk upgrade --update && \
     apk add --update curl pwgen && \
     curl -jksSL -o /tmp/apache-tomcat.tar.gz http://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz && \
     gunzip -c /tmp/apache-tomcat.tar.gz | tar -xf - -C /opt &&\
-    curl -jksSL -o /create_tomcat_admin_user.sh https://raw.githubusercontent.com/jz3p/ecbd-tomcat7/master/create_tomcat_admin_user.sh&& \
-    curl -jksSL -o /create_tomcat_admin_user.sh https://raw.githubusercontent.com/jz3p/ecbd-tomcat7/master/run.sh /run.sh && \
+    curl -jksSL -o /create_tomcat_admin_user.sh https://raw.githubusercontent.com/jz3p/ecbd-tomcat7/master/create_tomcat_admin_user.sh && \
+    curl -jksSL -o /run.sh https://raw.githubusercontent.com/jz3p/ecbd-tomcat7/master/run.sh && \
     ln -s /opt/apache-tomcat-${TOMCAT_VERSION} ${TOMCAT_HOME} && \
     chmod +x /*.sh
     rm -rf ${TOMCAT_HOME}/webapps/examples ${TOMCAT_HOME}/webapps/docs &&\
