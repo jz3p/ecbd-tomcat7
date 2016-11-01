@@ -1,7 +1,7 @@
 # AlpineLinux Tomcat
 #
 # VERSION 7.0.69
-FROM docker.neg/ec2/jpf-jdk:1.7.0_80
+FROM jimdd/ecbd-jdk7
 
 MAINTAINER Sam Zhao <Sam.X.Zhao@newegg.com>
 
