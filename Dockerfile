@@ -19,7 +19,7 @@ RUN apk upgrade --update && \
     curl -jksSL -o /create_tomcat_admin_user.sh https://raw.githubusercontent.com/jz3p/ecbd-tomcat7/master/create_tomcat_admin_user.sh && \
     curl -jksSL -o /run.sh https://raw.githubusercontent.com/jz3p/ecbd-tomcat7/master/run.sh && \
     ln -s /opt/apache-tomcat-${TOMCAT_VERSION} ${TOMCAT_HOME} && \
-    chmod +x /*.sh
+    chmod +x /*.sh  && \
     rm -rf ${TOMCAT_HOME}/webapps/examples ${TOMCAT_HOME}/webapps/docs &&\
     apk del curl && \
     rm -rf /tmp/* /var/cache/apk/*
