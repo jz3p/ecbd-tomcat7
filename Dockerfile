@@ -3,7 +3,7 @@
 # VERSION 7.0.69
 FROM jimdd/ecbd-jdk7
 
-MAINTAINER Sam Zhao <Sam.X.Zhao@newegg.com>
+MAINTAINER Jim Zhang <jim.d.zhang@newegg.com>
 
 # Set environment
 ENV TOMCAT_MAJOR=7 \
